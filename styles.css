@@ -24,7 +24,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none;  /* Hide scrollbar in WebKit browsers */
+    /*display: none;*/  /* Hide scrollbar in WebKit browsers */
 }
 
 a {
@@ -48,7 +48,7 @@ h2 {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-align: center;
     margin: 16px 0;
 }
@@ -271,6 +271,49 @@ form {
     width: 100%;
 }
 
+.explanation-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*gap: 1rem;*/
+    color:var(--clr-light);
+    font-size: 1.7rem;
+}
+
+.explanation-step {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin: 2rem 10px;
+}
+
+.explanation-step .text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.explanation-step .image {
+    max-width: 50%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    flex:1;
+    border-radius: 8px;
+}
+
+.come-funziona-button {
+    margin: 5rem 0;
+    width: 50%;
+}
+
+.question {
+    margin: 3rem 0;
+}
+
 @media (max-width: 1395px) {
     nav {
         margin: 0px 20px 0 10px;
@@ -370,12 +413,19 @@ form {
     } */
 
     button {
-        width: 100%;
+        width: 90%;
         padding: 0;
         height: 7vh;
         margin: 20px 0;
     }
 
+    p {
+        font-size: 1rem;
+    }
+
+    .question {
+        margin: 1rem 0 0;
+    }
     .text-item {
         align-items: center;
         gap: 2vw;
@@ -389,41 +439,22 @@ form {
         display: flex;
         flex-direction: column;
     }
-}
+    
+    .explanation-step {
+        width: 90%;
+        display: contents;
+    }
 
-.explanation-container {
-    width: 100%;
-    margin: 5% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*gap: 1rem;*/
-    color:var(--clr-light);
-    font-size: 1.2rem;
-}
+    .explanation-container .image {
+        display: none;
+    }
 
-.explanation-step {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
+    .explanation-step .text {
+        max-width: 80%;
+    }
 
-.explanation-step text {
-    flex: 1;
-}
-
-.explanation-step .image {
-    max-width: 50%;
-    height: 50vh;
-    object-fit: cover;
-    flex:1;
-    border-radius: 8px;
-}
-
-.come-funziona-button {
-    margin: 5rem 0;
-    width: 50%;
+    .come-funziona-button {
+        margin: 3rem 0;
+        width: 80%;
+    }
 }
