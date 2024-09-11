@@ -14,7 +14,7 @@
             <div class="link-section">
                 <a href="index.html">
                     <div class="logo-container">
-                        <img src="Images/loghi/logo ultimo.png" alt="Versilia Detailing Logo" class="logo">
+                        <img src="Images/loghi/logo ultimo.webp" alt="Versilia Detailing Logo" class="logo">
                         <label class="service-name">Versilia Detailing</label>
                     </div>
                 </a>
@@ -22,13 +22,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </label>
                 <ul class="nav-links">
-                    <li><a href="come-funziona.html">Come Funziona</a></li>
+                    <li><a href="#">Cos'è il detailing</a></li>
                     <li class="pipe">|</li>
-                    <li><a id="scroll-link">Prenota</a></li>
-                    <li class="pipe">|</li>
-                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="#">Servizi</a></li>
                     <li class="pipe">|</li>
                     <li><a href="galleria.html">Galleria</a></li>
+                    <li class="pipe">|</li>
+                    <li><button class="navbar-prenota" onclick="scrolldown()">Prenota</button></li>
                 </ul>
             </div>
             <label for="sidebar-active" class="open-sidebar-button">
@@ -48,28 +48,114 @@
                 </div>
                 <button type="button" onclick="scrolldown()">Prenota Un Appuntamento</button>
             </div>
-            <div class="item">
-                <img class="hero-image" src="Images/foto video vari/audi-hero.jpg" alt="Versilia Detailing Service Image">
+        </div>
+    </section>
+    <section class="snap">
+        <div class="explanation-container">
+            <h1>Come funziona?</h1>
+            <div class="explanation-step hidden">
+                <div class="text">
+                    <h1>1.</h1><p>COMPILA IL MODULO: Il primo passo è compilare il modulo di contatto con i tuoi dati e il modello dell'auto. Puoi aggiungere richieste particolari o domande. Una volta inviato, sarai ricontattato per discutere insieme i dettagli dell'appuntamento, tra cui data, orario e servizi.</p>
+                </div>
+                <img src="Images/foto video vari/wheel.webp" class="image">
+            </div>
+            <div class="explanation-step hidden">
+                <img src="Images/Galleria/bmw1.webp" class="image">
+                <div class="text">
+                    <h1>2.</h1><p>ASPETTA COMODAMENTE: Dopo aver stabilito i dettagli con il nostro team, non dovrai fare altro che attendere comodamente a casa tua. Il nostro staff si presenterà all’orario concordato, eliminando la necessità di recarti presso un autolavaggio tradizionale.</p>
+                </div>
+            </div>
+            <div class="explanation-step hidden">
+                <div class="text">
+                    <h1>3.</h1><p>LAVAGGIO SUL POSTO: Il nostro team arriverà al tuo domicilio con tutta l’attrezzatura necessaria (acqua compresa) per eseguire un lavaggio professionale della tua auto utilizzando prodotti di alta qualità per garantire una pulizia impeccabile, lasciando la tua auto perfettamente pulita e brillante.</p>
+                </div>
+                <img src="Images/foto video vari/audi-hero-original.webp" class="image">
+            </div>
+        </div>
+    </section>
+    <section class="snap">
+        <div class="works-container">
+            <h1>I Nostri Lavori</h1>
+            <div class="works-panel">
+                <div class="works-item item-1">
+                    <img src="Images/Lavori/lavori1.webp" alt="Immagine Lavori 1">
+                </div>
+                <div class="works-item item-2">
+                    <img src="Images/Lavori/lavori2.webp" alt="Immagine Lavori 2">
+                </div>
+                <div class="works-item item-3">
+                    <img src="Images/Lavori/lavori3.webp" alt="Immagine Lavori 3">
+                </div>
+                <div class="works-item item-4">
+                    <img src="Images/Lavori/lavori4.webp" alt="Immagine Lavori 4">
+                </div>
+                <div class="works-item item-5">
+                    <img src="Images/Lavori/lavori5.webp" alt="Immagine Lavori 5">
+                </div>
+                <div class="works-item item-6">
+                    <img src="Images/Galleria/bmw1.webp" alt="Immagine Lavori 6">
+                </div>
             </div>
         </div>
     </section>
     <section class="panel snap">
-        <div class="contact-container">
-            <h2>Contattaci</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="f578e7ee-03e3-4b5f-bb9b-3483dbe32ce5">
-                <input type="hidden" name="subject" value="Nuovo Cliente">
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <!--<input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">-->
-                <input type="text" id="form-name" name="name" placeholder="Nome" class="contact-input" maxlength='20' required>
-                <input type="text" id="form-surname" name="surname" placeholder="Cognome" class="contact-input" maxlength='20' required>
-                <input type="email" id="form-email" name="email" placeholder="Email" class="contact-input span-two" maxlength='40' required>
-                <input type="tel" id="form-phone" name="phone" placeholder="Telefono" maxlength='12' class="contact-input span-two" required>
-                <textarea name="Messaggio" id="form-message" placeholder="Località, Servizio richiesto o ulteriori informazioni" class="contact-input column-two row-two"></textarea>
-                <button id="form-submit" onclick="clearform()" type="submit" class="submit-button span-two">Invia</button>
-            </form>
+        <div class="contact-panel" id="contact_panel">
+            <div class="contact-container">
+                <h1>Contattaci</h1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f578e7ee-03e3-4b5f-bb9b-3483dbe32ce5">
+                    <input type="hidden" name="subject" value="Nuovo Cliente">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="text" id="form-name" name="name" placeholder="Nome" class="contact-input" maxlength='20' required>
+                    <input type="text" id="form-surname" name="surname" placeholder="Cognome" class="contact-input" maxlength='20' required>
+                    <input type="email" id="form-email" name="email" placeholder="Email" class="contact-input span-two" maxlength='40' required>
+                    <input type="tel" id="form-phone" name="phone" placeholder="Telefono" maxlength='12' class="contact-input span-two" required>
+                    <textarea name="Messaggio" id="form-message" placeholder="Località, modello auto e ulteriori informazioni" class="contact-input column-two row-two"></textarea>
+                    <button id="form-submit" onclick="clearform()" type="submit" class="submit-button span-two">Invia</button>
+                </form>
+            </div>
+            <div class="info-container">
+                <h2>Leggere attentamente prima di prenotare un appuntamento</h2>
+                <ul>
+                    <li>In caso di necessità di annullamento, si prega di avvertire con un preavviso sufficiente.</li>
+                    <li>Il pagamento dovrà essere effettuato immediatamente al termine dell'operazione, in contanti, tramite bonifico bancario o PayPal.</li>
+                    <li>Vi preghiamo di rimuovere gli oggetti personali dal vostro veicolo prima dell'inizio dei lavori</li>
+                    <li>I nostri prezzi sono indicativi. Ci riserviamo il diritto di addebitare un extra per livelli irragionevoli di sporcizia, peli di animali, vomito, disordine eccessivo o qualsiasi altra cosa che richieda tempo e sforzi aggiuntivi per essere corretta.</li>
+                    <li>La nostra assicurazione stabilisce che possiamo lavorare solo in luoghi adatti. Non lavoreremo su strade principali, parcheggi pubblici o qualsiasi luogo che rappresenti un rischio per la sicurezza.</li>
+                    <li>In caso di condizioni metereologiche avverse, cerchiamo sempre di portare a termine il lavoro, ma potrebbe essere necessario riprogrammarlo.</li>
+                    <li>Abbiamo bisogno di un parcheggio per il nostro piccolo furgone e di spazio sufficiente per aprire completamente tutte le portiere del veicolo</li>
+                    <li>Abbiamo bisogno di accesso alla corrente elettrica nel luogo concordato per svolgere qualsiasi lavoro. È richiesta una presa di corrente entro 30 metri</li>
+                    <li>Per le località che richiedono un tempo di percorrenza superiore ad un'ora, addebitiamo 20€ per ogni ora extra a tratta.</li>
+                </ul>
+            </div>
         </div>
-        <script src='script.js'></script>
     </section>
+    <footer>
+        <div class="contact-footer">
+            <div class="contact-info-container">
+                <div class="contact-box">
+                    <img src="Images/Icons/phone_social_icon.svg" width="32px" height="32px">
+                    <a href="tel:3887367442"><u>+39 388 736 7442</u></a>
+                </div>
+                <div class="contact-box">
+                    <img src="Images/Icons/mail_message_send_icon.svg" width="32px" height="32px">
+                    <a href="mailto:versilia.detailing@gmail.com"><u>versilia.detailing@gmail.com</u></a>
+                </div>
+                <div class="contact-box">
+                    <a href="https://www.instagram.com/versilia.detailing/">
+                        <img src="Images/Icons/instagram logo_icon.svg" width="32px" height="32px">
+                        <u>Instagram</u>
+                    </a>
+                </div>
+                <div class="contact-box">
+                    <a href="https://www.facebook.com/profile.php?id=61562475505929&locale=it_IT">
+                        <img src="Images/Icons/facebook logo_icon.svg" width="32px" height="32px">
+                        <u>Facebook</u>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src='script.js'></script>
 </body>
 </html>
