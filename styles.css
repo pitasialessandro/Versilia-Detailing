@@ -280,6 +280,14 @@ form {
     margin-block-end: 0;
 }
 
+.column-two {
+    grid-column: span 4;
+}
+
+.row-two {
+    grid-row: span 2;
+}
+
 .submit-button {
     grid-column: 2 / 4;
     padding: 0;
