@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 :root {
     --clr-dark: #021526;
     --clr-light: #EEEEEE;
@@ -29,14 +31,14 @@ body::-webkit-scrollbar {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1.5s;
+    transform: translateY(20%);
+    transition: all 0.8s;
 }
 
 .show {
     opacity: 1;
     filter: none;
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 
 @media (prefers-reduced-motion) {
@@ -244,7 +246,6 @@ button:hover {
 }
 
 .contact-container {
-    height: 60vh;
     flex: 1.3;
     display: flex;
     flex-direction: column;
@@ -430,6 +431,10 @@ form {
     height: auto;
 }
 
+.contact {
+    height: 70vh;
+}
+
 @media (max-width: 2170px) {
     .info-container h2 {
         font-size: 1.4rem;
@@ -527,6 +532,8 @@ form {
     }
 
     .nav-links {
+        font-family: Syne;
+        font-weight: bold;
         position: fixed;
         flex-direction: column;
         justify-content: center;
@@ -541,6 +548,10 @@ form {
         box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.6);
         z-index: 5;
         transition: 0.4s ease-in-out
+    }
+
+    .nav-links button {
+        font-family: Syne;
     }
 
     .nav-links > li {
@@ -663,4 +674,10 @@ form {
         display: none;
     }
 
+}
+
+@media (max-width: 770px) {
+    .works-item {
+        height: 35vw;
+    }
 }
