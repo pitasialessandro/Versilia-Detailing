@@ -541,7 +541,7 @@ form {
         background-color: var(--clr-slate);
         position: absolute;
         gap: 1rem;
-        top: -210px;
+        top: -240px;
         left: 0;
         width: 100%;
         padding-bottom: 20px;
@@ -560,6 +560,10 @@ form {
 
     .pipe {
         display: none;
+    }
+
+    .li-prenota {
+        order: -1;
     }
 
     /* Show the hamburger menu */
