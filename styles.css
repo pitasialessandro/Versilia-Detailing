@@ -10,6 +10,7 @@
     --clr-light-blue: #111E41;
     --clr-light-blue-text: #687EB5;
     --clr-fuchsia: #F900A4;
+    --clr-cyan-text: #097EB0;
 }
 
 html {
@@ -34,14 +35,14 @@ body::-webkit-scrollbar {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: rotate(30deg) translateY(20%);
+    transform: translateY(20%);
     transition: all 0.8s;
 }
 
 .show {
     opacity: 1;
     filter: none;
-    transform: rotate(30deg) translateY(0%);
+    transform: translateY(0%);
 }
 
 @media (prefers-reduced-motion) {
@@ -457,7 +458,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     background-color: var(--clr-light-blue);
 }
 
@@ -524,10 +525,10 @@ form {
 
 .card-item {
     width: 25vw;
-    max-width: 20%;
+    max-width: 16%;
     height: 40vh;
     background-color: var(--clr-light);
-    border: solid 8px var(--clr-primary);
+    border: solid 4px var(--clr-cyan-text);
     border-radius: 20px;
     color: var(--clr-dark);
     padding: 1rem;
@@ -536,11 +537,11 @@ form {
     align-items: center;
     justify-content: space-evenly;
     font-weight: bold;
-    z-index: 10;
+    z-index: 5;
 }
 
 .card-item .blue {
-    color: var(--clr-primary);
+    color: var(--clr-cyan-text);
     font-size: 2rem;
 }
 
@@ -563,11 +564,14 @@ form {
 }
 
 .services-list-wrapper {
+    position: relative;
+    height: 30vh;
+    top: -100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem 0;
+    gap: 10rem;
     background-color: var(--clr-light);
     color: var(--clr-dark);
     font-size: 1.2rem;
@@ -578,10 +582,31 @@ form {
 }
 
 .services-list-wrapper .vertical {
-    height: 50%;
-    width: 5px;
-    border-radius: 6px;
+    border-left: 4px solid var(--clr-slate);
+    border-radius: 8px;
+    height: 120px;
+    left: 50%;
     background-color: var(--clr-dark);
+}
+
+.services-list-wrapper > .list {
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+.step-title {
+    color: var(--clr-light-blue-text);
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-title a {
+    font-size: 4rem;
+    color: var(--clr-light-blue-text);
 }
 
 @media (max-width: 2170px) {
