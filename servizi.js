@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentSelection !== 'piccola') {
             currentSelection = 'piccola';
             toggleActiveButton(autoPiccolaBtn, autoGrandeBtn);
-            updatePrices(piccolaPrices);
+            updatePrices(piccolaPrices, "#097EB0");
         }
     });
 
@@ -32,15 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentSelection !== 'grande') {
             currentSelection = 'grande';
             toggleActiveButton(autoGrandeBtn, autoPiccolaBtn);
-            updatePrices(grandePrices);
+            updatePrices(grandePrices, "#687EB5");
         }
     });
 
     // Function to update the prices based on the selection
-    function updatePrices(newPrices) {
+    function updatePrices(newPrices, color) {
         let i = 0
         for (i = 0; i < prices.length; i++) {
             prices[i].textContent = newPrices[i];
+            prices[i].style.color = color;
         }
         for (old_price of old_prices) 
             old_price.textContent = newPrices[i]
