@@ -86,15 +86,22 @@
                     ABBONAMENTO
                 </h2>
             </div>
+            <div class="toggle-selection-wrapper">
+                <h3>Seleziona il tipo di auto:</h3>
+                <div class="toggle-container">
+                    <button id="auto-piccola" class="toggle-button active">Auto Piccola</button>
+                    <button id="auto-grande" class="toggle-button">Auto Grande</button>
+                </div>
+            </div>
             <div class="cards-container">
                 <div class="card-item">
                     <div class="card-text">
                         <p class="blue">SETTIMANALE</p>
                         <p class="black">1 lavaggio ogni settimana</p>
                     </div>
-                    <p class="grey strikethrough">€90</p>
                     <div class="bottom-item">
-                        <p class="blue">€69.99</p>
+                        <p class="grey strikethrough">€80</p>
+                        <p class="blue" id="price1">€59.99</p>
                         <p class="black">a lavaggio</p>
                     </div>
                 </div>
@@ -103,9 +110,9 @@
                         <p class="blue">2 SETTIMANE</p>
                         <p class="black">1 lavaggio ogni 2 settimane</p>
                     </div>
-                    <p class="grey strikethrough">€90</p>
                     <div class="bottom-item">
-                        <p class="blue">€74.99</p>
+                        <p class="grey strikethrough">€80</p>
+                        <p class="blue" id="price2">€64.99</p>
                         <p class="black">a lavaggio</p>
                     </div>
                 </div>
@@ -114,9 +121,9 @@
                         <p class="blue">MENSILE</p>
                         <p class="black">1 lavaggio ogni 4 settimane</p>
                     </div>
-                    <p class="grey strikethrough">€90</p>
                     <div class="bottom-item">
-                        <p class="blue">€84.99</p>
+                        <p id="" class="grey strikethrough">€80</p>
+                        <p class="blue" id="price3">€74.99</p>
                         <p class="black">a lavaggio</p>
                     </div>
                 </div>
@@ -187,6 +194,93 @@
         </div>
     </footer>
     <script src='script.js'></script>
+    <script src='servizi.js'></script>
 </body>
-
 </html>
+
+<!-- 
+            <div class="cards-container">
+
+                <div class="card-item">
+                    <div class="card-text">
+                        <p class="blue">SETTIMANALE</p>
+                        <p class="black">1 lavaggio ogni settimana</p>
+                    </div>
+                    <div class="card-price">
+                        <div class="auto-type">AUTO PICCOLE</div>
+                        <div class="auto-price">
+                            <p class="grey strikethrough">€80</p>
+                            <div class="bottom-item">
+                                <p class="blue">€59.99</p>
+                                <p class="black">a lavaggio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal"></div>
+                    <div class="card-price">
+                        <div class="auto-type">AUTO GRANDI</div>
+                        <div class="auto-price">
+                            <p class="grey strikethrough">€90</p>
+                            <div class="bottom-item">
+                                <p class="blue">€69.99</p>
+                                <p class="black">a lavaggio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-text">
+                        <p class="blue">2 SETTIMANE</p>
+                        <p class="black">1 lavaggio ogni 2 settimane</p>
+                    </div>
+                    <div class="card-price">
+                        <div class="auto-type">AUTO PICCOLE</div>
+                        <div class="auto-price">
+                            <p class="grey strikethrough">€80</p>
+                            <div class="bottom-item">
+                                <p class="blue">€69.99</p>
+                                <p class="black">a lavaggio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal"></div>
+                    <div class="card-price">
+                        <div class="auto-type">AUTO GRANDI</div>
+                        <div class="auto-price">
+                            <p class="grey strikethrough">€90</p>
+                            <div class="bottom-item">
+                                <p class="blue">€74.99</p>
+                                <p class="black">a lavaggio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-text">
+                        <p class="blue">MENSILE</p>
+                        <p class="black">1 lavaggio ogni 4 settimane</p>
+                    </div>
+                    <div class="card-price">
+                        <div class="auto-type">AUTO PICCOLE</div>
+                        <div class="auto-price">
+                            <p class="grey strikethrough">€80</p>
+                            <div class="bottom-item">
+                                <p class="blue">€74.99</p>
+                                <p class="black">a lavaggio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal"></div>
+                    <div class="card-price">
+                        <div class="auto-type">AUTO GRANDI</div>
+                        <div class="auto-price">
+                            <p class="grey strikethrough">€90</p>
+                            <div class="bottom-item">
+                                <p class="blue">€84.99</p>
+                                <p class="black">a lavaggio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+ -->
